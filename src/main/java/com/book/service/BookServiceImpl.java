@@ -10,9 +10,9 @@ public class BookServiceImpl implements BookService {
     static List<Book> books = new ArrayList<>();
 
     static{
-        Book book1 = new Book(10,"Java Spring");
-        Book book2 = new Book(11,"Java Spring Boot");
-        Book book3 = new Book(12,"Oracle");
+        Book book1 = new Book(10,"Java Spring","James");
+        Book book2 = new Book(11,"Java Spring Boot","Jack");
+        Book book3 = new Book(12,"Oracle","Steve");
         books.add(book1);
         books.add(book2);
         books.add(book3);
