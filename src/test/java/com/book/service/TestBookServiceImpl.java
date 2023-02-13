@@ -18,7 +18,7 @@ public class TestBookServiceImpl {
     @Test
     public void testAddingBook()
     {
-        Book book = new Book(14,"Java Spring Thymeleaf");
+        Book book = new Book(14,"Java Spring Thymeleaf","Ram");
         int bookId = bookServiceImpl.addBook(book);
         assertTrue(bookId==14);
 
@@ -26,7 +26,7 @@ public class TestBookServiceImpl {
     @Test
     public void testUpdatingBook()
     {
-        Book updatedBook = new Book(10,"Java Spring Boot");
+        Book updatedBook = new Book(10,"Java Spring Boot","Jack");
         int updatedBookId =  bookServiceImpl.updateBook(updatedBook);
         assertEquals(updatedBook.getBname(),"Java Spring Boot");
 
