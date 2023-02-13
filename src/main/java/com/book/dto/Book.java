@@ -11,19 +11,24 @@ public class Book {
     }
 
     public void setBookId(int bookId) {
-        bookId = bookId;
+        this.bookId = bookId;
     }
 
     public void setBname(String bname) {
-        bname = bname;
+        this.bname = bname;
     }
 
     public int getBookId() {
-        return bookId;
+        return this.bookId;
     }
 
     public String getBname() {
-        return bname;
+        return this.bname;
+    }
+
+    @Override
+    public String toString() {
+        return "bookID:"+bookId+" bname:"+bname;
     }
 }
 
